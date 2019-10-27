@@ -70,6 +70,7 @@ final class SynchronousMethodHandler implements MethodHandler {
     this.propagationPolicy = propagationPolicy;
   }
 
+  //最终调用到的 代理类
   @Override
   public Object invoke(Object[] argv) throws Throwable {
     RequestTemplate template = buildTemplateFromArgs.create(argv);

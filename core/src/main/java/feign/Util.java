@@ -135,6 +135,7 @@ public class Util {
    * Identifies a method as a default instance method.
    */
   public static boolean isDefault(Method method) {
+    //判断是否是默认方法： 非abstract、public、非static、非synthetic的方法，并且声明在 接口中
     // Default methods are public non-abstract, non-synthetic, and non-static instance methods
     // declared in an interface.
     // method.isDefault() is not sufficient for our usage as it does not check
